@@ -23,6 +23,31 @@ let someNumber = 44
 
 let stringNumber = String(someNumber)
 
-console.log(stringNumber)
+// console.log(stringNumber)
 
-console.log(typeof stringNumber)
+// console.log(typeof stringNumber)
+
+/**********************Operations*****************************/
+
+console.log(2+2)
+console.log(2-2)
+console.log(2/2)
+console.log(2*2)
+console.log(2**3)
+console.log(2%3)
+
+console.log("1" + 2)
+console.log(1+"2")
+console.log(1+2+"2")
+console.log("1"+2+2)
+
+
+let gameCounter = 100
+// console.log(gameCounter)
+let gc = ++gameCounter 
+let gb = gameCounter++
+
+// console.log(gameCounter)
+// console.log(gc)
+// console.log(gb)
+
