@@ -31,10 +31,35 @@ const obj4 = {...obj1,...obj2,...obj3}
 
 
 
-console.log(Object.keys(tinderUser))
-console.log(Object.values(tinderUser))
-console.log(Object.entries(tinderUser))
-console.log(tinderUser.hasOwnProperty("isLoggedIn"))
+// console.log(Object.keys(tinderUser))
+// console.log(Object.values(tinderUser))
+// console.log(Object.entries(tinderUser))
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"))
+
+// ++++++++++ De-structure Object++++++++++++++
+
+const course = {
+    courseName: "javascript practice",
+    courseFees: "999",
+    courseInstructor: "hitesh choudhary"
+}
+
+console.log(course.courseName);
+
+
+const {courseInstructor} = course
+console.log(courseInstructor)
+
+const {courseName} = course
+console.log(courseName);
+
+
+const {courseFees} = course
+// console.log(fees);
+console.log(courseFees)
+
+
+
 
 
 
