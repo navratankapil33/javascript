@@ -29,3 +29,30 @@ function loginusername(username) {
 
 let fetchh = loginusername("hitesh")
 console.log(fetchh)
+
+// ---------------------
+
+function calculatePrice(...num1) { //rest operator (spread operator)
+    return num1
+}
+
+console.log(calculatePrice(200,300,400));
+
+const user = {
+    username: "hitesh",
+    price: 199
+}
+ 
+function handleObject(anyobject) {
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`)
+}
+
+handleObject(user)
+
+const myNewArray = [200,300,400,500]
+function returnSecondValue(getArray) {
+    return getArray[1]
+}
+console.log(returnSecondValue(myNewArray));
+
+
