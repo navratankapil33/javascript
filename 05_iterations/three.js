@@ -39,3 +39,12 @@ for (const [key, value] of map) {
 for (const [value] of map) {
     console.log(value)
 }
+
+const myObject = { game1: "NFS",
+    game2: "Spiderman",
+    game3: "Batman"
+}
+
+for (const [key,value] of myObject) {
+    console.log(key+" :- "+ value);
+}
