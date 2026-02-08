@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Edit || Remove Element</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName) {
+        const li = document.createElement('li')
+        li.innerText = langName
+        const ul = document.querySelector('.language')
+        ul.appendChild(li)
+    }
+    addLanguage("java")
+
+    function addOptimizedLanguage(langName) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptimizedLanguage("pthon")
+    addOptimizedLanguage("typescript")
+    addOptimizedLanguage("golang")
+
+    // Edit
+
+    const secondLang = document.querySelector("li:nth-child(2)")
+    const newli = document.createElement('li')
+    newli.textContent = "Angular Framework"
+    secondLang.replaceWith(newli)
+
+    // Edit
+
+    const firstLang = document.querySelector("li:nth-child(1)")
+    const firstli = document.createElement('li')
+    firstli.appendChild(document.createTextNode("Fuck you all programming langauages"))
+    firstLang.replaceWith(firstli)
+
+    const lastlang = document.querySelector("li:last-child")
+
+    lastlang.remove()
+
+
+
+
+    
+    
+</script>
+</html>
